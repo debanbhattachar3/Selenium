@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite">
+	<test name="search Maven All">
+		<classes>
+			<class name="com.google.search.Test1"></class>
+			<class name="com.google.search.Test2"></class>
+			<class name="com.google.search.Test3"></class>
+		</classes>
+	</test>
+	<test name="search 2">
+		<classes>
+			<class name="com.google.search.Test3"></class>
+		</classes>
+	</test>
+</suite>

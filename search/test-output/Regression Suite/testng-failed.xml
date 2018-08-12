@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
+  <test name="search Maven All">
+    <classes>
+      <class name="com.google.search.Test1"/>
+      <class name="com.google.search.Test2"/>
+      <class name="com.google.search.Test3"/>
+    </classes>
+  </test> <!-- search Maven All -->
+  <test name="search 2">
+    <classes>
+      <class name="com.google.search.Test3"/>
+    </classes>
+  </test> <!-- search 2 -->
+  <test name="search Maven All(failed)">
+    <classes>
+      <class name="com.google.search.Test1">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.google.search.Test1 -->
+      <class name="com.google.search.Test2">
+        <methods>
+          <include name="test"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.google.search.Test2 -->
+      <class name="com.google.search.Test3">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.google.search.Test3 -->
+    </classes>
+  </test> <!-- search Maven All(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->

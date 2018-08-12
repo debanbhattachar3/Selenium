@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sanity Suite">
+	<test name="search Maven All">
+		<classes>
+			<class name="com.google.search.Test1"></class>
+			<class name="com.google.search.Test2"></class>
+		</classes>
+	</test>
+</suite>
